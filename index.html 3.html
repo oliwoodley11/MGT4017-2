@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><br></p>
+<p class="p2">&lt;!DOCTYPE html&gt;</p>
+<p class="p2">&lt;html lang="en"&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2">&lt;title&gt;Ski Trace | Track your ski days&lt;/title&gt;</p>
+<p class="p2">&lt;style&gt;</p>
+<p class="p2">:root {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--bg:#0b1a25;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--nav:#152a3b;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--panel:#172c3e;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--line:#20384a;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--white:#edf4fb;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--muted:#9bb0c2;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--blue:#65bde9;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>--orange:#ff754f;</p>
+<p class="p2">}</p>
+<p class="p2">* {box-sizing:border-box;margin:0;padding:0}</p>
+<p class="p2">html {scroll-behavior:smooth;scroll-padding-top:88px}</p>
+<p class="p2">body {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--bg);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-family:Arial,Helvetica,sans-serif;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>line-height:1.6;</p>
+<p class="p2">}</p>
+<p class="p2">header {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>min-height:66px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--nav);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-bottom:1px solid #243d50;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:sticky;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>top:0;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>z-index:10;</p>
+<p class="p2">}</p>
+<p class="p2">.nav-wrap {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>max-width:1250px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin:auto;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:14px 28px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>justify-content:space-between;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>gap:24px;</p>
+<p class="p2">}</p>
+<p class="p2">.logo {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-weight:800;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:22px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:var(--blue);</p>
+<p class="p2">}</p>
+<p class="p2">nav {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>gap:24px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>flex-wrap:wrap;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>justify-content:flex-end;</p>
+<p class="p2">}</p>
+<p class="p2">nav a {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:#b8c8d6;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>text-decoration:none;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-weight:700;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:14px;</p>
+<p class="p2">}</p>
+<p class="p2">nav a:hover {color:var(--blue)}</p>
+<p class="p2">main {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>max-width:1120px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin:auto;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:0 24px;</p>
+<p class="p2">}</p>
+<p class="p2">section {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:76px 0;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-bottom:1px solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>scroll-margin-top:88px;</p>
+<p class="p2">}</p>
+<p class="p2">.hero,.product,.sustain {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>grid-template-columns:1.05fr .95fr;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>gap:50px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p2">}</p>
+<p class="p2">.hero {padding:58px 0 48px}</p>
+<p class="p2">h1 {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:clamp(48px,6vw,76px);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>line-height:1.05;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>letter-spacing:-2px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin-bottom:42px;</p>
+<p class="p2">}</p>
+<p class="p2">.hero p {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-family:Georgia,serif;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:21px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>max-width:560px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin-bottom:26px;</p>
+<p class="p2">}</p>
+<p class="p2">.actions {display:flex;gap:14px;flex-wrap:wrap}</p>
+<p class="p2">.btn {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:inline-block;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:12px 24px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-radius:7px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-weight:800;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>text-decoration:none;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:2px solid var(--white);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p2">}</p>
+<p class="p2">.btn.primary {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--orange);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-color:var(--orange);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:white;</p>
+<p class="p2">}</p>
+<p class="p2">.btn:hover {filter:brightness(1.08)}</p>
+<p class="p2">.mountain {width:100%;max-width:500px;justify-self:end}</p>
+<p class="p2">.tracker-card {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--panel);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:1px solid #213d52;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-radius:18px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>min-height:330px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>place-items:center;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:30px;</p>
+<p class="p2">}</p>
+<p class="p2">.tracker {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>width:175px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>height:285px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:10px solid var(--white);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-radius:44px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p2">}</p>
+<p class="p2">.tracker:before {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>content:"";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>width:70px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>height:70px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:10px solid #197ca8;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-radius:50%;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>left:42px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>top:42px;</p>
+<p class="p2">}</p>
+<p class="p2">.tracker:after {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>content:"";</p>
+<p class="p2"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>width:92px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>height:62px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>left:37px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>top:150px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--orange);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>clip-path:polygon(0 82%,9% 94%,39% 47%,59% 72%,91% 0,100% 12%,62% 91%,39% 66%,10% 100%);</p>
+<p class="p2">}</p>
+<p class="p2">h2 {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-size:clamp(30px,4vw,44px);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>line-height:1.15;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>letter-spacing:-1px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin-bottom:18px;</p>
+<p class="p2">}</p>
+<p class="p2">h3 {font-size:19px;margin-bottom:8px}</p>
+<p class="p2">.copy {font-family:Georgia,serif;color:var(--muted);font-size:18px}</p>
+<p class="p2">.product-copy .btn {margin-top:22px}</p>
+<p class="p2">.care-intro {font-family:Georgia,serif;font-size:18px;margin:8px 0 24px}</p>
+<p class="p2">.three-cols {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(3,1fr);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>gap:34px;</p>
+<p class="p2">}</p>
+<p class="p2">.info {border-left:4px solid var(--blue);padding:0 18px}</p>
+<p class="p2">.info p {font-family:Georgia,serif;color:var(--muted);margin-top:8px}</p>
+<p class="p2">.review {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>max-width:720px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--panel);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-left:6px solid var(--orange);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:24px 28px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin:12px 0 24px;</p>
+<p class="p2">}</p>
+<p class="p2">.review blockquote {font-family:Georgia,serif;font-size:22px}</p>
+<p class="p2">.review small {display:block;color:var(--muted);margin-top:8px}</p>
+<p class="p2">.sustain {grid-template-columns:1fr 1fr}</p>
+<p class="p2">.sustain p {font-family:Georgia,serif;font-size:18px}</p>
+<p class="p2">.contact-grid {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(3,1fr);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>gap:18px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin-top:24px;</p>
+<p class="p2">}</p>
+<p class="p2">.contact-card {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>background:var(--panel);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border:1px solid #213d52;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>border-radius:12px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:22px;</p>
+<p class="p2">}</p>
+<p class="p2">.contact-card p {font-family:Georgia,serif;color:var(--muted)}</p>
+<p class="p2">footer {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>max-width:1120px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>margin:auto;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>padding:30px 24px 45px;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">  </span>font-family:Georgia,serif;</p>
+<p class="p2">}</p>
+<p class="p2">@media(max-width:760px) {</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.nav-wrap {align-items:flex-start;flex-direction:column}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.nav-wrap nav {justify-content:flex-start;gap:12px 18px}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.hero,.product,.sustain {grid-template-columns:1fr}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.hero {gap:24px}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.mountain {max-width:420px}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.three-cols,.contact-grid {grid-template-columns:1fr}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>.tracker-card {min-height:280px}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>section {padding:54px 0}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>h1 {margin-bottom:24px}</p>
+<p class="p2">}</p>
+<p class="p2">&lt;/style&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;header&gt;</p>
+<p class="p2">&lt;div class="nav-wrap"&gt;</p>
+<p class="p2">&lt;div class="logo"&gt;Ski Trace&lt;/div&gt;</p>
+<p class="p2">&lt;nav&gt;</p>
+<p class="p2">&lt;a href="#home"&gt;Home&lt;/a&gt;</p>
+<p class="p2">&lt;a href="#product"&gt;Our product and shop&lt;/a&gt;</p>
+<p class="p2">&lt;a href="#care"&gt;Looking after your product&lt;/a&gt;</p>
+<p class="p2">&lt;a href="#reviews"&gt;Reviews and support&lt;/a&gt;</p>
+<p class="p2">&lt;a href="#sustainability"&gt;Sustainability and ethics&lt;/a&gt;</p>
+<p class="p2">&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
+<p class="p2">&lt;/nav&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/header&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;main&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section class="hero" id="home"&gt;</p>
+<p class="p2">&lt;div&gt;</p>
+<p class="p2">&lt;h1&gt;Welcome to&lt;br&gt;Ski Trace&lt;/h1&gt;</p>
+<p class="p2">&lt;p&gt;A simple way to track your ski days and progress on the slopes.&lt;/p&gt;</p>
+<p class="p2">&lt;div class="actions"&gt;</p>
+<p class="p2">&lt;a class="btn primary" href="#product"&gt;Explore the tracker&lt;/a&gt;</p>
+<p class="p2">&lt;a class="btn" href="#care"&gt;Care and setup&lt;/a&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;svg class="mountain" viewBox="0 0 520 330"&gt;</p>
+<p class="p2">&lt;path d="M20 300 L20 170 110 80 178 130 280 12 380 145 432 105 510 190 510 300Z" fill="#2a4056"/&gt;</p>
+<p class="p2">&lt;path d="M286 24 C215 55 365 93 250 142 S390 200 280 245 S220 265 225 286" fill="none" stroke="#65bde9" stroke-width="7" stroke-linecap="round"/&gt;</p>
+<p class="p2">&lt;circle cx="225" cy="286" r="12" fill="#ff754f"/&gt;</p>
+<p class="p2">&lt;/svg&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section class="product" id="product"&gt;</p>
+<p class="p2">&lt;div class="tracker-card"&gt;</p>
+<p class="p2">&lt;div class="tracker"&gt;&lt;/div&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;div class="product-copy"&gt;</p>
+<p class="p2">&lt;h2&gt;Our product and shop&lt;/h2&gt;</p>
+<p class="p2">&lt;h3&gt;Ski Trackers&lt;/h3&gt;</p>
+<p class="p2">&lt;p class="copy"&gt;Explore the tracker and see how it records your ski activity.&lt;/p&gt;</p>
+<p class="p2">&lt;a class="btn primary" href="#contact"&gt;Shop the tracker&lt;/a&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section id="care"&gt;</p>
+<p class="p2">&lt;h2&gt;How to ensure you look after your product&lt;/h2&gt;</p>
+<p class="p2">&lt;p class="care-intro"&gt;Setup, care and safety information for your ski tracker.&lt;/p&gt;</p>
+<p class="p2">&lt;div class="three-cols"&gt;</p>
+<p class="p2">&lt;div class="info"&gt;</p>
+<p class="p2">&lt;h3&gt;Setup&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Get your tracker ready before your first run.&lt;/p&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;div class="info"&gt;</p>
+<p class="p2">&lt;h3&gt;Care&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Keep it clean and dry between ski days.&lt;/p&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;div class="info"&gt;</p>
+<p class="p2">&lt;h3&gt;Safety&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Read the safety guidance before you use it on the slopes.&lt;/p&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section id="reviews"&gt;</p>
+<p class="p2">&lt;h2&gt;Product reviews and customer support&lt;/h2&gt;</p>
+<p class="p2">&lt;div class="review"&gt;</p>
+<p class="p2">&lt;blockquote&gt;“Easy to use and a helpful way to look back at my ski day.”&lt;/blockquote&gt;</p>
+<p class="p2">&lt;small&gt;Customer review&lt;/small&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;a class="btn" href="mailto:info@skitrace.example?subject=Customer%20support"&gt;Contact customer support&lt;/a&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section class="sustain" id="sustainability"&gt;</p>
+<p class="p2">&lt;h2&gt;Sustainability and&lt;br&gt;ethical factors&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;Information about responsible choices and business practices.&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section id="contact"&gt;</p>
+<p class="p2">&lt;h2&gt;Contact information&lt;/h2&gt;</p>
+<p class="p2">&lt;div class="contact-grid"&gt;</p>
+<p class="p2">&lt;div class="contact-card"&gt;</p>
+<p class="p2">&lt;h3&gt;Email&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Send us a message&lt;/p&gt;</p>
+<p class="p2">&lt;a href="mailto:info@skitrace.example" style="color:var(--blue)"&gt;info@skitrace.example&lt;/a&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;div class="contact-card"&gt;</p>
+<p class="p2">&lt;h3&gt;Customer support&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Get help with your tracker&lt;/p&gt;</p>
+<p class="p2">&lt;a href="mailto:info@skitrace.example?subject=Customer%20support" style="color:var(--blue)"&gt;Contact support&lt;/a&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;div class="contact-card"&gt;</p>
+<p class="p2">&lt;h3&gt;Social media&lt;/h3&gt;</p>
+<p class="p2">&lt;p&gt;Follow Ski Trace&lt;/p&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;/main&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;footer&gt;</p>
+<p class="p2">© 2026 Ski Trace. First prototype built from the homepage wireframe.</p>
+<p class="p2">&lt;/footer&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
+</body>
+</html>
